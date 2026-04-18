@@ -1,21 +1,20 @@
 {
   "name": "quickreply-whatsapp-gateway",
-  "version": "1.0.0",
-  "description": "Baileys-powered WhatsApp gateway for QuickReply SaaS. Provides QR-based auth and per-user WhatsApp sessions.",
-  "main": "src/server.js",
+  "version": "2.0.0",
+  "description": "Multi-tenant WhatsApp gateway using Baileys + Supabase storage",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "node --watch src/server.js"
+    "start": "node src/index.js"
   },
   "engines": {
     "node": ">=20"
   },
   "dependencies": {
-    "@hapi/boom": "^10.0.1",
+    "@supabase/supabase-js": "^2.45.0",
     "baileys": "^6.7.18",
     "express": "^4.21.2",
-    "pino": "^9.5.0",
-    "qrcode": "^1.5.4"
+    "qrcode": "^1.5.4",
+    "pino": "^9.5.0"
   }
 }
